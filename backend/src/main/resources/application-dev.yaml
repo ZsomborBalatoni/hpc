@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://aws-0-eu-central-1.pooler.supabase.com:5432/postgres
+    username: postgres
+    password: ${DB_PASSWORD:xcy6egc_ugh_ZXW-unh}
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        default_schema: public
+        hbm2ddl:
+          auto: update  #don't use in prod
+        format_sql: true #don't use in prod
